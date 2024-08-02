@@ -389,17 +389,11 @@
 .feature .feature-item:hover .feature-icon i {
     z-index: 9;
 }
-.feature-item .wrap{
-    /* font-size: 20px; */
-    /* background-color: red; */
-    /* height: 200px; */
-    /* white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;*/
+ .wrap{
     overflow-y: scroll;
     height: 200px;
 }
-.feature-item .wrap::-webkit-scrollbar{
+ .wrap::-webkit-scrollbar{
     display: none;
 }
 
@@ -452,11 +446,18 @@
 
 
 /*** Service Start ***/
+.service .service-img{
+    background-position: center;
+    background-size: contain;
+    object-fit: contain;
+}
 .service .service-item {
     border-radius: 10px;
 }
 .service .service-item .service-img {
     position: relative;
+    aspect-ratio: 3/2;
+    object-fit: cover;
     overflow: hidden;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
