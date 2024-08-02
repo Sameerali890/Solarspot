@@ -393,10 +393,15 @@
     /* font-size: 20px; */
     /* background-color: red; */
     /* height: 200px; */
-    white-space: nowrap;
+    /* white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
-} 
+    overflow: hidden;*/
+    overflow-y: scroll;
+    height: 200px;
+}
+.feature-item .wrap::-webkit-scrollbar{
+    display: none;
+}
 
 .feature .feature-item .feature-icon::after {
     content: "";
