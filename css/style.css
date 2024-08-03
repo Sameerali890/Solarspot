@@ -363,6 +363,31 @@
 }
 /*** Single Page Hero Header End ***/
 
+/* Contact us page start */
+/* .form .radio-btn{
+  margin-top: 2%;
+} */
+ /* .form .radio-btn input[type="radio"]{
+    display: none;
+  }
+  .form .radio-btn input[type="radio"]:checked + label{
+    background-color: rgb(24, 89, 255);
+    color: white;
+  }
+  .form .radio-btn label{
+    position: relative;
+    color: rgb(243, 42, 92);
+    background-color: transparent;
+    border: 1px solid rgb(2, 23, 66);
+    padding: 10px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+
+  } */
+
+/* Contact us page end */
+
+
 /*** Feature Start ***/
 .feature .feature-item {
   border-radius: 10px;
