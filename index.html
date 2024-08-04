@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>SolarSpot</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -11,19 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
+        rel="stylesheet" />
 
     <!-- Icon Font Stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
     <link rel="stylesheet" href="lib/animate/animate.min.css" />
@@ -35,219 +29,160 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
     </div>
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div
-      class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block"
-    >
-      <div class="container">
-        <div class="row gx-0 align-items-center">
-          <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-            <div class="d-flex flex-wrap">
-              <div class="border-end border-primary pe-3">
-                <a href="#" class="text-muted small"
-                  ><i class="fas fa-map-marker-alt text-primary me-2"></i
-                  >Basement 2,Khurram nagar, Ring road lucknow uttar pradesh
-                  226022</a
-                >
-              </div>
-              <div class="ps-3">
-                <a href="mailto:example@gmail.com" class="text-muted small"
-                  ><i class="fas fa-envelope text-primary me-2"></i
-                  >example@gmail.com</a
-                >
-              </div>
+    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+        <div class="container">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <div class="border-end border-primary pe-3">
+                            <a href="#" class="text-muted small"><i
+                                    class="fas fa-map-marker-alt text-primary me-2"></i>Basement 2,Khurram nagar, Ring
+                                road lucknow uttar pradesh
+                                226022</a>
+                        </div>
+                        <div class="ps-3">
+                            <a href="mailto:example@gmail.com" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>example@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex justify-content-end">
+                        <div class="d-flex border-end border-primary pe-3">
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-4 text-center text-lg-end">
-            <div class="d-flex justify-content-end">
-              <div class="d-flex border-end border-primary pe-3">
-                <a class="btn p-0 text-primary me-3" href="#"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="btn p-0 text-primary me-3" href="#"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="btn p-0 text-primary me-3" href="#"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a class="btn p-0 text-primary me-0" href="#"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- Topbar End -->
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="#" class="navbar-brand p-0">
-            <img
-              class="logo rounded-3"
-              src="img/Solarspot logo-1 1.png"
-              alt="Logo"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span class="fa fa-bars"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-0 mx-lg-auto">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="about.html" class="nav-item nav-link">About</a>
-              <a href="service.html" class="nav-item nav-link">Services</a>
-              <a href="blog.html" class="nav-item nav-link">Vision</a>
-              <div class="nav-item dropdown">
-                <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                  <span class="dropdown-toggle">Pages</span>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#" class="navbar-brand p-0">
+                    <img class="logo rounded-3" src="img/Solarspot logo-1 1.png" alt="Logo" />
                 </a>
-                <div class="dropdown-menu">
-                  <a href="feature.html" class="dropdown-item">Our Features</a>
-                  <a href="team.html" class="dropdown-item">Our team</a>
-                  <a href="testimonial.html" class="dropdown-item"
-                    >Testimonial</a
-                  >
-                  <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-0 mx-lg-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="blog.html" class="nav-item nav-link">Vision</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Pages</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="feature.html" class="dropdown-item">Our Features</a>
+                                <a href="team.html" class="dropdown-item">Our team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
                 </div>
-              </div>
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-          </div>
-          <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-            <a
-              href="#"
-              class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
-              data-wow-delay=".9s"
-            >
-              <i class="fa fa-phone-alt fa-2x"></i>
-              <div class="position-absolute" style="top: 7px; right: 12px">
-                <span><i class="fa fa-comment-dots text-secondary"></i></span>
-              </div>
-            </a>
-            <div class="d-flex flex-column ms-3">
-              <span>Call to Our Experts</span>
-              <a href="tel:+ 7800-09-08-07"
-                ><span class="text-dark">Free: + 7800-09-08-07</span></a
-              >
-            </div>
-          </div>
-        </nav>
-      </div>
+                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+                        data-wow-delay=".9s">
+                        <i class="fa fa-phone-alt fa-2x"></i>
+                        <div class="position-absolute" style="top: 7px; right: 12px">
+                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                        </div>
+                    </a>
+                    <div class="d-flex flex-column ms-3">
+                        <span>Call to Our Experts</span>
+                        <a href="tel:+ 7800-09-08-07"><span class="text-dark">Free: + 7800-09-08-07</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
     <!-- Navbar & Hero End -->
 
     <!-- Modal Search Start -->
-    <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex align-items-center bg-primary">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span
-                id="search-icon-1"
-                class="btn bg-light border nput-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Search by keyword
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center bg-primary">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1" />
+                        <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i
+                                class="fa fa-search"></i></span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- Modal Search End -->
 
     <!-- Carousel Start -->
     <div class="header-carousel owl-carousel d-">
-      <div class="header-carousel-item bg-primary">
-        <div class="carousel-caption">
-          <div class="container">
-            <div class="row g-4 align-items-center">
-              <div class="col-lg-7 animated fadeInLeft">
-                <div class="text-sm-center text-md-start">
-                  <h4 class="text-white text-uppercase fw-bold mb-4">
-                    Welcome To SolarSpot
-                  </h4>
-                  <h1 class="display-1 heading-text text-white mb-4">
-                    Power up your life with solar energy
-                  </h1>
-                  <p class="mb-5 fs-5">
-                    We are committed to revolutionizing energy consumption by
-                    harnessing the power of the sun. Our mission is to empower
-                    businesses and households to transition to sustainable
-                    energy, reducing their carbon footprint while enjoying
-                    significant savings on energy bills. We believe in a future
-                    where renewable energy is accessible, reliable, and
-                    efficient for all.
-                  </p>
-                  <div
-                    class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4"
-                  >
-                    <a
-                      class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
-                      href="#"
-                      >Learn More</a
-                    >
-                  </div>
+        <div class="header-carousel-item bg-primary">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-7 animated fadeInLeft">
+                            <div class="text-sm-center text-md-start">
+                                <h4 class="text-white text-uppercase fw-bold mb-4">
+                                    Welcome To SolarSpot
+                                </h4>
+                                <h1 class="display-1 heading-text text-white mb-4">
+                                    Power up your life with solar energy
+                                </h1>
+                                <p class="mb-5 fs-5">
+                                    We are committed to revolutionizing energy consumption by
+                                    harnessing the power of the sun. Our mission is to empower
+                                    businesses and households to transition to sustainable
+                                    energy, reducing their carbon footprint while enjoying
+                                    significant savings on energy bills. We believe in a future
+                                    where renewable energy is accessible, reliable, and
+                                    efficient for all.
+                                </p>
+                                <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
+                                    <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 animated fadeInRight">
+                            <div class="calrousel-img" style="object-fit: cover">
+                                <img src="img/home.svg" class="img-fluid w-100" alt="" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-5 animated fadeInRight">
-                <div class="calrousel-img" style="object-fit: cover">
-                  <img src="img/home.svg" class="img-fluid w-100" alt="" />
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- <div class="header-carousel-item bg-primary">
+        <!-- <div class="header-carousel-item bg-primary">
                 <div class="carousel-caption">
                     <div class="container">
                         <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
@@ -276,639 +211,477 @@
     <!-- Carousel End -->
 
     <!-- Contact Start -->
-    <div
-      class="container-fluid form contact bg-light py-5 border-bottom border-4"
-    >
-      <div class="container py-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">Contact Us</h4>
-          <h1 class="display-4 mb-4">
-            If you have any query please contact now
-          </h1>
-        </div>
-        <div class="row g-5">
-          <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-            <div class="contact-img d-flex justify-content-center">
-              <div class="contact-img-inner mb-4">
-                <img
-                  src="img/contact.png"
-                  class="img-fluid w-100"
-                  alt="Image"
-                />
-              </div>
+    <div class="container-fluid form contact bg-light py-5 border-bottom border-4">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+                <h4 class="text-primary">Contact Us</h4>
+                <h1 class="display-4 mb-4">
+                    If you have any query please contact now
+                </h1>
             </div>
-          </div>
-          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
-            <div>
-              <h4 class="text-primary">Send Your Message</h4>
-              <p class="fs-5 mb-5">Get genuine advice from our <span class="fw-bold">Solar Experts</span>.
-                No pressure, book only if you are satisfied!</p>
-              <form action="https://api.web3forms.com/submit" method="POST">
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="9acd8131-bcdf-4312-8fd6-bd99311605eb"
-                />
-                <div class="row g-3">
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        name="firstname"
-                        placeholder="First Name"
-                        class="form-control border-0"
-                        id="name"
-                        required
-                      />
-                      <label for="name">First Name</label>
+            <div class="row g-5">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="contact-img d-flex justify-content-center">
+                        <div class="contact-img-inner mb-4">
+                            <img src="img/contact.png" class="img-fluid w-100" alt="Image" />
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        name="lastname"
-                        class="form-control border-0"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                      />
-                      <label for="email">Last Name</label>
-                    </div>
-                  </div>
-                  
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="phone"
-                        class="form-control border-0"
-                        id="phone"
-                        name="phone"
-                        placeholder="Phone"
-                        required
-                      />
-                      <label for="phone">Your Phone</label>
-                    </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control border-0"
-                        id="project"
-                        name="email"
-                        placeholder="Project"
-                        required
-                      />
-                      <label for="project">Your Email</label>
-                    </div>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <select class="form-select border-0 px-3 " required name="Monthly Electricity Bill" id="newField1" aria-label="Monthly Electricity Bill">
-                        <option value="1500"></option>
-                        <option value="1500 - 2000">1500 - 2000</option>
-                        <option value="2000 - 2500">2000 - 2500</option>
-                        <option value="2500 - 3000">2500 - 3000</option>
-                        <option value="3000 & above">3000 & above</option>
-                    </select>
-                    <label class="px-4 fw-fill fs-5" for="Monthly Electricity Bill">Monthly Electricity Bill</label>
                 </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control border-0"
-                        placeholder="Leave a message here"
-                        id="message"
-                        name="Message"
-                        style="height: 120px"
-                      ></textarea>
-                      <label for="message">Message</label>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                    <div>
+                        <h4 class="text-primary">Send Your Message</h4>
+                        <p class="fs-5 mb-5">Get genuine advice from our <span class="fw-bold">Solar Experts</span>.
+                            No pressure, book only if you are satisfied!</p>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="9acd8131-bcdf-4312-8fd6-bd99311605eb" />
+                            <div class="row g-3">
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="firstname" placeholder="First Name"
+                                            class="form-control border-0" id="name" required />
+                                        <label for="name">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="lastname" class="form-control border-0" id="email"
+                                            placeholder="Last Name" required />
+                                        <label for="email">Last Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="phone" class="form-control border-0" id="phone" name="phone"
+                                            placeholder="Phone" required />
+                                        <label for="phone">Your Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0" id="project" name="email"
+                                            placeholder="Your City" required />
+                                        <label for="project">Your City</label>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select border-0 px-3 " required name="Monthly Electricity Bill"
+                                        id="newField1" aria-label="Monthly Electricity Bill">
+                                        <option value=""></option>
+                                        <option value="0-3000 INR">0-3000 INR</option>
+                                        <option value="3001-5000 INR">3001-5000 INR</option>
+                                        <option value="5001-7500 INR">5001-7500 INR</option>
+                                        <option value="7501+ INR">7501+ INR</option>
+                                    </select>
+                                    <label class="px-4 fw-fill fs-5" for="Monthly Electricity Bill">Monthly Electricity
+                                        Bill</label>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0" placeholder="Leave a message here"
+                                            id="message" name="Message" style="height: 120px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-5">
+                                    <button type="submit" class="btn btn-primary w-100 py-3">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                  </div>
-                  <div class="col-12 pt-5">
-                    <button type="submit" class="btn btn-primary w-100 py-3">
-                      Send Message
-                    </button>
-                  </div>
                 </div>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- Contact End -->
 
     <!-- Feature Start -->
     <div class="container-fluid feature bg-light py-5">
-      <div class="container py-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">Our Goal</h4>
-          <h1 class="display-4 mb-4">Empowering Sustainability</h1>
-          <p class="mb-0">
-            Our primary goal is to help our customers embrace clean energy
-            solutions, contributing to a greener and more sustainable future.
-            Delivering Excellence: We strive to provide top-notch solar panel
-            installations that are efficient and long-lasting, ensuring our
-            customers receive the best value for their investment. Customer
-            Satisfaction: We are committed to exceeding customer expectations by
-            offering comprehensive services and exceptional support, making the
-            transition to solar energy seamless and stress-free.
-          </p>
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+                <h4 class="text-primary">Our Goal</h4>
+                <h1 class="display-4 mb-4">Empowering Sustainability</h1>
+                <p class="mb-0">
+                    Our primary goal is to help our customers embrace clean energy
+                    solutions, contributing to a greener and more sustainable future.
+                    Delivering Excellence: We strive to provide top-notch solar panel
+                    installations that are efficient and long-lasting, ensuring our
+                    customers receive the best value for their investment. Customer
+                    Satisfaction: We are committed to exceeding customer expectations by
+                    offering comprehensive services and exceptional support, making the
+                    transition to solar energy seamless and stress-free.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="feature-item p-4 pt-0">
+                        <div class="feature-icon p-4 mb-4">
+                            <i class="far fa-handshake fa-3x"></i>
+                        </div>
+                        <h4 class="mb-4 fs-12">Rigid Structure Guarantee</h4>
+                        <p class="mb-4 wrap">
+                            We promise to provide a robust solar panel structure that stands
+                            the test of time. Our systems are designed to last for 25 years
+                            and can withstand maximum wind pressure. Whether facing the
+                            harshest weather conditions or day-to-day wear and tear, our
+                            solar panels are built to endure and continue delivering
+                            reliable energy.
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="feature-item p-4 pt-0">
+                        <div class="feature-icon p-4 mb-4">
+                            <i class="fa fa-headphones fa-3x"></i>
+                        </div>
+                        <h4 class="mb-4">Proactive System Monitoring</h4>
+                        <p class="mb-4 wrap">
+                            Our dedicated backend team continuously monitors your solar
+                            system's performance and energy generation. We track the data
+                            and analyze it to ensure optimal performance. If any issues
+                            arise or if the system requires service, we proactively dispatch
+                            our team to your location—without you having to chase us. We are
+                            committed to providing seamless support, so you can focus on
+                            enjoying the benefits of solar energy without any hassle.
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="feature-item p-4 pt-0">
+                        <div class="feature-icon p-4 mb-4">
+                            <i class="fa fa-dollar-sign fa-3x"></i>
+                        </div>
+                        <h4 class="mb-4">Guaranteed Minimum Units Produced</h4>
+                        <p class="mb-4 wrap">
+                            At SolarSpot, we understand the importance of reliable energy
+                            output. That's why we guarantee a minimum number of units
+                            produced by our solar systems. If this minimum is not met, we
+                            ensure compensation of ₹8 per unit. This guarantees that our
+                            customers consistently receive the energy savings they expect,
+                            allowing them to maximize their return on investment and enjoy
+                            uninterrupted power supply.
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="feature-item p-4 pt-0">
+                        <div class="feature-icon p-4 mb-4">
+                            <i class="fa fa-bullseye fa-3x"></i>
+                        </div>
+                        <h4 class="mb-4">Comprehensive 5-Year Maintenance Plan</h4>
+                        <p class="mb-4 wrap">
+                            We stand by the quality of our installations with a
+                            comprehensive 5-year maintenance plan. This includes all
+                            necessary maintenance and cleaning services, ensuring that your
+                            solar panels operate at peak efficiency. Our team provides free
+                            washing and maintenance services as often as needed, even if it
+                            requires multiple visits per month. Your satisfaction and
+                            system's longevity are our top priorities.
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row g-4">
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="far fa-handshake fa-3x"></i>
-              </div>
-              <h4 class="mb-4">Rigid Structure Guarantee</h4>
-              <p class="mb-4 wrap">
-                We promise to provide a robust solar panel structure that stands
-                the test of time. Our systems are designed to last for 25 years
-                and can withstand maximum wind pressure. Whether facing the
-                harshest weather conditions or day-to-day wear and tear, our
-                solar panels are built to endure and continue delivering
-                reliable energy.
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.4s"
-          >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fa fa-dollar-sign fa-3x"></i>
-              </div>
-              <h4 class="mb-4">Guaranteed Minimum Units Produced</h4>
-              <p class="mb-4 wrap">
-                At SolarSpot, we understand the importance of reliable energy
-                output. That's why we guarantee a minimum number of units
-                produced by our solar systems. If this minimum is not met, we
-                ensure compensation of ₹8 per unit. This guarantees that our
-                customers consistently receive the energy savings they expect,
-                allowing them to maximize their return on investment and enjoy
-                uninterrupted power supply.
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.6s"
-          >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fa fa-bullseye fa-3x"></i>
-              </div>
-              <h4 class="mb-4">Comprehensive 5-Year Maintenance Plan</h4>
-              <p class="mb-4 wrap">
-                We stand by the quality of our installations with a
-                comprehensive 5-year maintenance plan. This includes all
-                necessary maintenance and cleaning services, ensuring that your
-                solar panels operate at peak efficiency. Our team provides free
-                washing and maintenance services as often as needed, even if it
-                requires multiple visits per month. Your satisfaction and
-                system's longevity are our top priorities.
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.8s"
-          >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fa fa-headphones fa-3x"></i>
-              </div>
-              <h4 class="mb-4">Proactive System Monitoring</h4>
-              <p class="mb-4 wrap">
-                Our dedicated backend team continuously monitors your solar
-                system's performance and energy generation. We track the data
-                and analyze it to ensure optimal performance. If any issues
-                arise or if the system requires service, we proactively dispatch
-                our team to your location—without you having to chase us. We are
-                committed to providing seamless support, so you can focus on
-                enjoying the benefits of solar energy without any hassle.
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Feature End -->
 
     <!-- About Start -->
     <div class="container-fluid bg-light about pb-5">
-      <div class="container pb-5">
-        <div class="row g-5">
-          <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-            <div class="about-item-content bg-white rounded p-4 h-100">
-              <h4 class="text-primary">Our Vision</h4>
-              <h1 class="display-4 mb-4">High Range of Exploring Protection</h1>
-              <p>
-                At SolarSpot, our vision is to create a world where every
-                household is powered by free solar electricity, contributing to
-                a cleaner and healthier environment. We aim to reduce pollution
-                and promote sustainable living by making renewable energy
-                accessible to all.
-              </p>
-              <p>
-                We believe in a future where everyone can enjoy a tension-free
-                life without the burden of rising energy costs. By providing
-                reliable and cost-effective solar solutions, we strive to
-                eliminate the worry of paying electricity bills, allowing people
-                to focus on what matters most to them. Our goal is to empower
-                individuals and communities to take control of their energy
-                needs, leading to a greener planet and a brighter, more
-                sustainable future for all.
-              </p>
-              <p class="text-dark mt-4">
-                <i class="fa fa-check text-primary me-3"></i>We can save your
-                money.
-              </p>
-              <p class="text-dark">
-                <i class="fa fa-check text-primary me-3"></i>Rigid Structure
-                Guarantee.
-              </p>
-              <p class="text-dark">
-                <i class="fa fa-check text-primary me-3"></i>Guaranteed Minimum
-                Units Produced.
-              </p>
-              <p class="text-dark">
-                <i class="fa fa-check text-primary me-3"></i>Comprehensive
-                5-Year Maintenance Plan.
-              </p>
-              <p class="text-dark mb-4">
-                <i class="fa fa-check text-primary me-3"></i>Proactive System
-                Monitoring.
-              </p>
-              <a class="btn btn-primary rounded-pill py-3" href="#"
-                >More Information</a
-              >
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="about-item-content bg-white rounded p-4 h-100">
+                        <h4 class="text-primary">Our Vision</h4>
+                        <h1 class="display-4 mb-4">High Range of Exploring Protection</h1>
+                        <p>
+                            At SolarSpot, our vision is to create a world where every
+                            household is powered by free solar electricity, contributing to
+                            a cleaner and healthier environment. We aim to reduce pollution
+                            and promote sustainable living by making renewable energy
+                            accessible to all.
+                        </p>
+                        <p>
+                            We believe in a future where everyone can enjoy a tension-free
+                            life without the burden of rising energy costs. By providing
+                            reliable and cost-effective solar solutions, we strive to
+                            eliminate the worry of paying electricity bills, allowing people
+                            to focus on what matters most to them. Our goal is to empower
+                            individuals and communities to take control of their energy
+                            needs, leading to a greener planet and a brighter, more
+                            sustainable future for all.
+                        </p>
+                        <p class="text-dark mt-4">
+                            <i class="fa fa-check text-primary me-3"></i>We can save your
+                            money.
+                        </p>
+                        <p class="text-dark">
+                            <i class="fa fa-check text-primary me-3"></i>Rigid Structure
+                            Guarantee.
+                        </p>
+                        <p class="text-dark">
+                            <i class="fa fa-check text-primary me-3"></i>Guaranteed Minimum
+                            Units Produced.
+                        </p>
+                        <p class="text-dark">
+                            <i class="fa fa-check text-primary me-3"></i>Comprehensive
+                            5-Year Maintenance Plan.
+                        </p>
+                        <p class="text-dark mb-4">
+                            <i class="fa fa-check text-primary me-3"></i>Proactive System
+                            Monitoring.
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-3" href="#">More Information</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="bg-white rounded p-4 h-100">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-12">
+                                <div class="rounded bg-light">
+                                    <img src="img/about-2.png" class="img-fluid rounded w-100 h-75" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">129</span>
+                                        <span class="h1 fw-bold text-primary">+ MWp</span>
+                                    </div>
+                                    <h4 class="mb-0 text-dark">Installation</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">99</span>
+                                        <span class="h1 fw-bold text-primary">+ Cr</span>
+                                    </div>
+                                    <h4 class="mb-0 text-dark">Save In Bills</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">556</span>
+                                        <span class="h1 fw-bold text-primary">+</span>
+                                    </div>
+                                    <h4 class="mb-0 text-dark">Skilled Agents</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">10</span>
+                                        <span class="h1 fw-bold text-primary">+</span>
+                                    </div>
+                                    <h4 class="mb-0 text-dark">Years Experience</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-            <div class="bg-white rounded p-4 h-100">
-              <div class="row g-4 justify-content-center">
-                <div class="col-12">
-                  <div class="rounded bg-light">
-                    <img
-                      src="img/about-2.png"
-                      class="img-fluid rounded w-100 h-75"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="counter-item bg-light rounded p-3 h-100">
-                    <div class="counter-counting">
-                      <span
-                        class="text-primary fs-2 fw-bold"
-                        data-toggle="counter-up"
-                        >129</span
-                      >
-                      <span class="h1 fw-bold text-primary">+ MWp</span>
-                    </div>
-                    <h4 class="mb-0 text-dark">Installation</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="counter-item bg-light rounded p-3 h-100">
-                    <div class="counter-counting">
-                      <span
-                        class="text-primary fs-2 fw-bold"
-                        data-toggle="counter-up"
-                        >99</span
-                      >
-                      <span class="h1 fw-bold text-primary">+ Cr</span>
-                    </div>
-                    <h4 class="mb-0 text-dark">Save In Bills</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="counter-item bg-light rounded p-3 h-100">
-                    <div class="counter-counting">
-                      <span
-                        class="text-primary fs-2 fw-bold"
-                        data-toggle="counter-up"
-                        >556</span
-                      >
-                      <span class="h1 fw-bold text-primary">+</span>
-                    </div>
-                    <h4 class="mb-0 text-dark">Skilled Agents</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="counter-item bg-light rounded p-3 h-100">
-                    <div class="counter-counting">
-                      <span
-                        class="text-primary fs-2 fw-bold"
-                        data-toggle="counter-up"
-                        >10</span
-                      >
-                      <span class="h1 fw-bold text-primary">+</span>
-                    </div>
-                    <h4 class="mb-0 text-dark">Years Experience</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- About End -->
 
     <!-- Service Start -->
     <div class="container-fluid service py-5">
-      <div class="container py-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">Our Services</h4>
-          <h1 class="display-4 mb-4">We Provide Best Services</h1>
-          <p class="mb-0">
-            At SolarSpot, we are committed to delivering high-quality, durable
-            solar systems that meet the specific needs of our commercial
-            clients. Our expertise ensures that businesses, factories, and other
-            enterprises can benefit from clean, renewable energy, contributing
-            to a greener and more sustainable future.
-          </p>
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+                <h4 class="text-primary">Our Services</h4>
+                <h1 class="display-4 mb-4">We Provide Best Services</h1>
+                <p class="mb-0">
+                    At SolarSpot, we are committed to delivering high-quality, durable
+                    solar systems that meet the specific needs of our commercial
+                    clients. Our expertise ensures that businesses, factories, and other
+                    enterprises can benefit from clean, renewable energy, contributing
+                    to a greener and more sustainable future.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/service 1.jpg" class="img-fluid service-img rounded-top w-100" alt="" />
+                            <div class="service-icon p-3">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <a href="#" class="d-inline-block h4 mb-4">Residential Solar</a>
+                                <p class="mb-4 wrap">
+                                    At SolarSpot, we specialize in installing residential solar
+                                    systems that cater to the daily electricity needs of
+                                    individual homes. Our solutions are designed to harness the
+                                    power of the sun, providing a reliable and sustainable
+                                    source of energy for everyday use
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/service 2.png" class="img-fluid rounded-top w-100" alt="" />
+                            <div class="service-icon p-3">
+                                <i class="fa fa-building fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <a href="#" class="d-inline-block h4 mb-4">Commercial Solar
+                                </a>
+                                <p class="mb-4 wrap">
+                                    At SolarSpot, our commercial solar solutions are tailored to
+                                    meet the diverse energy needs of various industries. Our
+                                    main clients include businesses, factories, solar atta
+                                    chakki (flour mills), and solar pumps. We understand the
+                                    unique energy demands of these sectors and provide
+                                    customized solar installations that enhance efficiency and
+                                    reduce operational costs.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/service 3.png" class="img-fluid rounded-top w-100" alt="" />
+                            <div class="service-icon p-3">
+                                <i class="fa fa-handshake fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <a href="#" class="d-inline-block h4 mb-4">Businesses</a>
+                                <p class="mb-4 wrap">
+                                    For corporate offices, retail establishments, and other
+                                    business enterprises, our solar solutions offer a reliable
+                                    and cost-effective alternative to conventional power
+                                    sources. By installing solar systems, businesses can reduce
+                                    their energy expenses, increase sustainability, and achieve
+                                    greater energy independence.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/service 4.png" class="img-fluid rounded-top w-100" alt="" />
+                            <div class="service-icon p-3">
+                                <i class="fa fa-industry fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <a href="#" class="d-inline-block h4 mb-4">Factories</a>
+                                <p class="mb-4 wrap">
+                                    Manufacturing facilities often have high energy
+                                    requirements, making them ideal candidates for solar power.
+                                    Our systems are designed to handle the significant
+                                    electricity demands of factories, providing a stable and
+                                    sustainable energy source that supports production processes
+                                    while minimizing environmental impact.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s"></div>
+            </div>
         </div>
-        <div class="row g-4 justify-content-center">
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service 1.jpg"
-                  class="img-fluid service-img rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-home fa-2x"></i>
-                </div>
-              </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4"
-                    >Residential Solar</a
-                  >
-                  <p class="mb-4 wrap">
-                    At SolarSpot, we specialize in installing residential solar
-                    systems that cater to the daily electricity needs of
-                    individual homes. Our solutions are designed to harness the
-                    power of the sun, providing a reliable and sustainable
-                    source of energy for everyday use
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.4s"
-          >
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service 2.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-building fa-2x"></i>
-                </div>
-              </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4"
-                    >Commercial Solar
-                  </a>
-                  <p class="mb-4 wrap">
-                    At SolarSpot, our commercial solar solutions are tailored to
-                    meet the diverse energy needs of various industries. Our
-                    main clients include businesses, factories, solar atta
-                    chakki (flour mills), and solar pumps. We understand the
-                    unique energy demands of these sectors and provide
-                    customized solar installations that enhance efficiency and
-                    reduce operational costs.
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.6s"
-          >
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service 3.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-handshake fa-2x"></i>
-                </div>
-              </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4">Businesses</a>
-                  <p class="mb-4 wrap">
-                    For corporate offices, retail establishments, and other
-                    business enterprises, our solar solutions offer a reliable
-                    and cost-effective alternative to conventional power
-                    sources. By installing solar systems, businesses can reduce
-                    their energy expenses, increase sustainability, and achieve
-                    greater energy independence.
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.8s"
-          >
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service 4.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-industry fa-2x"></i>
-                </div>
-              </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4">Factories</a>
-                  <p class="mb-4 wrap">
-                    Manufacturing facilities often have high energy
-                    requirements, making them ideal candidates for solar power.
-                    Our systems are designed to handle the significant
-                    electricity demands of factories, providing a stable and
-                    sustainable energy source that supports production processes
-                    while minimizing environmental impact.
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-12 text-center wow fadeInUp"
-            data-wow-delay="0.2s"
-          ></div>
-        </div>
-      </div>
     </div>
     <!-- Service End -->
 
     <!-- FAQs Start -->
     <div class="container-fluid faq-section bg-light py-5">
-      <div class="container py-5">
-        <div class="row g-5 align-items-center">
-          <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-            <div class="h-100">
-              <div class="mb-5">
-                <h4 class="text-primary">Some Important FAQ's</h4>
-                <h1 class="display-4 mb-0">
-                  Common Frequently Asked Questions
-                </h1>
-              </div>
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button border-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Q: Why Should I Go Solar?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show active"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body rounded">
-                      Going solar has several benefits. First, it’s a smart
-                      financial move. By installing solar panels on your
-                      property, you can save money on your electricity bills and
-                      protect yourself against rising rates in the future.
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="h-100">
+                        <div class="mb-5">
+                            <h4 class="text-primary">Some Important FAQ's</h4>
+                            <h1 class="display-4 mb-0">
+                                Common Frequently Asked Questions
+                            </h1>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button border-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Q: Why Should I Go Solar?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show active"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded">
+                                        Going solar has several benefits. First, it’s a smart
+                                        financial move. By installing solar panels on your
+                                        property, you can save money on your electricity bills and
+                                        protect yourself against rising rates in the future.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Q: How Much Can I Save with Solar?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A: The amount you save depends on your area’s utility
+                                        rates, solar policies, and the size of your system. But
+                                        rest assured, going solar is a wise investment regardless
+                                        of where you live.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Q: What About Property Values?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A: Studies have shown that homes with solar energy systems
+                                        sell for more. However, this increase in property value is
+                                        more significant if you own (rather than lease) your solar
+                                        panel system.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Q: How Much Can I Save with Solar?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      A: The amount you save depends on your area’s utility
-                      rates, solar policies, and the size of your system. But
-                      rest assured, going solar is a wise investment regardless
-                      of where you live.
-                    </div>
-                  </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                    <img src="img/faq.png" class="img-fluid w-100" alt="" />
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Q: What About Property Values?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      A: Studies have shown that homes with solar energy systems
-                      sell for more. However, this increase in property value is
-                      more significant if you own (rather than lease) your solar
-                      panel system.
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
-            <img src="img/faq.png" class="img-fluid w-100" alt="" />
-          </div>
         </div>
-      </div>
     </div>
     <!-- FAQs End -->
 
@@ -1071,7 +844,7 @@
         </div>
         <div class="row g-4">
           <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
             data-wow-delay="0.2s"
           >
             <div class="team-item">
@@ -1111,7 +884,7 @@
             </div>
           </div>
           <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
             data-wow-delay="0.4s"
           >
             <div class="team-item">
@@ -1151,7 +924,7 @@
             </div>
           </div>
           <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
             data-wow-delay="0.6s"
           >
             <div class="team-item">
@@ -1191,7 +964,7 @@
             </div>
           </div>
           <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            class="col-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
             data-wow-delay="0.8s"
           >
             <div class="team-item">
@@ -1359,265 +1132,183 @@
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-xl-9">
-            <div class="mb-5">
-              <div class="row g-4">
-                <div class="col-md-6 col-lg-6 col-xl-5">
-                  <div class="footer-item">
-                    <a href="index.html" class="p-0">
-                      <h3 class="text-white">SolarSpot</h3>
-                      <!-- <img src="img/logo.png" alt="Logo"> -->
-                    </a>
-                    <p class="text-white mb-4">
-                      Professional Solar Installation Guaranteed Yearly Savings
-                      on Electricity Bill Trusted By 2600+ Lucknowites
-                    </p>
-                    <div class="footer-btn d-flex">
-                      <a class="btn btn-md-square rounded-circle me-3" href="#"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                      <a class="btn btn-md-square rounded-circle me-3" href="#"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                      <a class="btn btn-md-square rounded-circle me-3" href="#"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                      <a class="btn btn-md-square rounded-circle me-0" href="#"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                  <div class="footer-item">
-                    <h4 class="text-white mb-4">Useful Links</h4>
-                    <a href="#"
-                      ><i class="fas fa-angle-right me-2"></i> About Us</a
-                    >
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-9">
+                    <div class="mb-5">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-6 col-xl-5">
+                                <div class="footer-item">
+                                    <a href="index.html" class="p-0">
+                                        <h3 class="text-white">SolarSpot</h3>
+                                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                                    </a>
+                                    <p class="text-white mb-4">
+                                        Professional Solar Installation Guaranteed Yearly Savings
+                                        on Electricity Bill Trusted By 2600+ Lucknowites
+                                    </p>
+                                    <div class="footer-btn d-flex">
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6 col-xl-3">
+                                <div class="footer-item">
+                                    <h4 class="text-white mb-4">Useful Links</h4>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
 
-                    <a href="#"
-                      ><i class="fas fa-angle-right me-2"></i> Services</a
-                    >
-                    <a href="#"
-                      ><i class="fas fa-angle-right me-2"></i> Vision</a
-                    >
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Vision</a>
 
-                    <a href="#"
-                      ><i class="fas fa-angle-right me-2"></i> Contact</a
-                    >
-                  </div>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                                </div>
+                            </div>
+                            <!-- Gallary start -->
+                            <!-- <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="footer-item">
+                                    <h4 class="mb-4 text-white">Gallery</h4>
+                                    <div class="row g-3">
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/G1.jpg" class="img-fluid w-100" alt="" />
+                                                <div class="footer-search-icon">
+                                                    <a href="img/G1.jpg" data-lightbox="footerInstagram-1"
+                                                        class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/G1.jpg" class="img-fluid w-100" alt="" />
+                                                <div class="footer-search-icon">
+                                                    <a href="img/G1.jpg" data-lightbox="footerInstagram-2"
+                                                        class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/G1.jpg" class="img-fluid w-100" alt="" />
+                                                <div class="footer-search-icon">
+                                                    <a href="img/G1.jpg" data-lightbox="footerInstagram-3"
+                                                        class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/G1.jpg" class="img-fluid w-100" alt="" />
+                                                <div class="footer-search-icon">
+                                                    <a href="img/G1.jpg" data-lightbox="footerInstagram-4"
+                                                        class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/G1.jpg" class="img-fluid w-100" alt="" />
+                                                <div class="footer-search-icon">
+                                                    <a href="img/G1.jpg" data-lightbox="footerInstagram-5"
+                                                        class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/G1.jpg" class="img-fluid w-100" alt="" />
+                                                <div class="footer-search-icon">
+                                                    <a href="img/G1.jpg" data-lightbox="footerInstagram-6"
+                                                        class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                             <!-- Gallary end -->
+                        </div>
+                    </div>
+                    <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08)">
+                        <div class="row g-0">
+                            <div class="col-12">
+                                <div class="row g-4">
+                                    <div class="col-lg-6 col-xl-4">
+                                        <div class="d-flex">
+                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-white">Address</h4>
+                                                <p class="mb-0">Basement 2,Khurram Nagar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-4">
+                                        <div class="d-flex">
+                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                <i class="fas fa-envelope fa-2x"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-white">Mail Us</h4>
+                                                <p class="mb-0">info@example.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-4">
+                                        <div class="d-flex">
+                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                <i class="fa fa-phone-alt fa-2x"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-white">Telephone</h4>
+                                                <p class="mb-0">7800-09-08-07</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-4">
-                  <div class="footer-item">
-                    <h4 class="mb-4 text-white">Gallery</h4>
-                    <div class="row g-3">
-                      <div class="col-4">
-                        <div class="footer-instagram rounded">
-                          <img
-                            src="img/G1.jpg"
-                            class="img-fluid w-100"
-                            alt=""
-                          />
-                          <div class="footer-search-icon">
-                            <a
-                              href="img/G1.jpg"
-                              data-lightbox="footerInstagram-1"
-                              class="my-auto"
-                              ><i class="fas fa-link text-white"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="footer-instagram rounded">
-                          <img
-                            src="img/G1.jpg"
-                            class="img-fluid w-100"
-                            alt=""
-                          />
-                          <div class="footer-search-icon">
-                            <a
-                              href="img/G1.jpg"
-                              data-lightbox="footerInstagram-2"
-                              class="my-auto"
-                              ><i class="fas fa-link text-white"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="footer-instagram rounded">
-                          <img
-                            src="img/G1.jpg"
-                            class="img-fluid w-100"
-                            alt=""
-                          />
-                          <div class="footer-search-icon">
-                            <a
-                              href="img/G1.jpg"
-                              data-lightbox="footerInstagram-3"
-                              class="my-auto"
-                              ><i class="fas fa-link text-white"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="footer-instagram rounded">
-                          <img
-                            src="img/G1.jpg"
-                            class="img-fluid w-100"
-                            alt=""
-                          />
-                          <div class="footer-search-icon">
-                            <a
-                              href="img/G1.jpg"
-                              data-lightbox="footerInstagram-4"
-                              class="my-auto"
-                              ><i class="fas fa-link text-white"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="footer-instagram rounded">
-                          <img
-                            src="img/G1.jpg"
-                            class="img-fluid w-100"
-                            alt=""
-                          />
-                          <div class="footer-search-icon">
-                            <a
-                              href="img/G1.jpg"
-                              data-lightbox="footerInstagram-5"
-                              class="my-auto"
-                              ><i class="fas fa-link text-white"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="footer-instagram rounded">
-                          <img
-                            src="img/G1.jpg"
-                            class="img-fluid w-100"
-                            alt=""
-                          />
-                          <div class="footer-search-icon">
-                            <a
-                              href="img/G1.jpg"
-                              data-lightbox="footerInstagram-6"
-                              class="my-auto"
-                              ><i class="fas fa-link text-white"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="pt-5"
-              style="border-top: 1px solid rgba(255, 255, 255, 0.08)"
-            >
-              <div class="row g-0">
-                <div class="col-12">
-                  <div class="row g-4">
-                    <div class="col-lg-6 col-xl-4">
-                      <div class="d-flex">
-                        <div
-                          class="btn-xl-square bg-primary text-white rounded p-4 me-4"
-                        >
-                          <i class="fas fa-map-marker-alt fa-2x"></i>
-                        </div>
-                        <div>
-                          <h4 class="text-white">Address</h4>
-                          <p class="mb-0">Basement 2,Khurram Nagar</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4">
-                      <div class="d-flex">
-                        <div
-                          class="btn-xl-square bg-primary text-white rounded p-4 me-4"
-                        >
-                          <i class="fas fa-envelope fa-2x"></i>
-                        </div>
-                        <div>
-                          <h4 class="text-white">Mail Us</h4>
-                          <p class="mb-0">info@example.com</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4">
-                      <div class="d-flex">
-                        <div
-                          class="btn-xl-square bg-primary text-white rounded p-4 me-4"
-                        >
-                          <i class="fa fa-phone-alt fa-2x"></i>
-                        </div>
-                        <div>
-                          <h4 class="text-white">Telephone</h4>
-                          <p class="mb-0">7800-09-08-07</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-xl-3">
-            <div class="footer-item">
-              <h4 class="text-white mb-4">Newsletter</h4>
-              <p class="text-white mb-3">Feel free to contact us</p>
-              <div class="position-relative rounded-pill mb-4">
-                <input
-                  class="form-control rounded-pill w-100 py-3 ps-4 pe-5"
-                  type="text"
-                  placeholder="Enter your email"
-                />
-                <button
-                  type="button"
-                  class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
-                >
-                  SignUp
-                </button>
-              </div>
-              <div class="d-flex flex-shrink-0">
-                <div class="footer-btn">
-                  <a
-                    href="#"
-                    class="btn btn-lg-square rounded-circle position-relative wow tada"
-                    data-wow-delay=".9s"
-                  >
-                    <i class="fa fa-phone-alt fa-2x"></i>
-                    <div
-                      class="position-absolute"
-                      style="top: 2px; right: 12px"
-                    >
-                      <span
-                        ><i class="fa fa-comment-dots text-secondary"></i
-                      ></span>
+                <div class="col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Newsletter</h4>
+                        <p class="text-white mb-3">Feel free to contact us</p>
+                        <div class="position-relative rounded-pill mb-4">
+                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Enter your email" />
+                            <button type="button"
+                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">
+                                SignUp
+                            </button>
+                        </div>
+                        <div class="d-flex flex-shrink-0">
+                            <div class="footer-btn">
+                                <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
+                                    data-wow-delay=".9s">
+                                    <i class="fa fa-phone-alt fa-2x"></i>
+                                    <div class="position-absolute" style="top: 2px; right: 12px">
+                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column ms-3 flex-shrink-0">
+                                <span>Call to Our Experts</span>
+                                <a href="tel:+ 7800-09-08-07"><span class="text-white">Free: + 7800-09-08-07</span></a>
+                            </div>
+                        </div>
                     </div>
-                  </a>
                 </div>
-                <div class="d-flex flex-column ms-3 flex-shrink-0">
-                  <span>Call to Our Experts</span>
-                  <a href="tel:+ 7800-09-08-07"
-                    ><span class="text-white">Free: + 7800-09-08-07</span></a
-                  >
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- Footer End -->
 
@@ -1640,9 +1331,7 @@
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"
-      ><i class="fa fa-arrow-up"></i
-    ></a>
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -1656,5 +1345,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
