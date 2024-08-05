@@ -391,6 +391,7 @@
 /*** Feature Start ***/
 .feature .feature-item {
   border-radius: 10px;
+  height: 500px;
   background: var(--bs-white);
   transition: 0.5s;
 }
