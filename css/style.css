@@ -23,29 +23,85 @@
   z-index: 99;
 }
 
-/* Welcom Text Animation */
-@keyframes myAnimation{
+/* Welcom Text Animation start*/
+/* @keyframes myAnimation{
   0%{
     opacity: 1;
-    transform: rotateX(0deg);
+
   }
   50%{
     opacity: 1;
-    transform: rotateX(0deg);
+    
   }
   100%{
-    display: none;
     opacity: 0;
-    transform: rotateX(0deg);
+    
   }
 }
 
 .myelement{
     animation-name: myAnimation;
-    animation-duration: 5000ms;
-    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    /* animation-fill-mode: forwards; */
     /* animation-delay: 5000ms; */
+} */
+
+/* #spin::after{
+  content: "";
+  animation: spin 3.6s;
+  font-size: 40px;
 }
+@keyframes spin {
+  0%{
+   
+    
+  }
+  40%{
+    content: "Welcome To SolarSpot!";
+  }
+  80%{
+    content: "Sunshine Delivered! ";
+  }
+  100%{
+    content: "";
+  }
+} */
+ 
+#wrapper {
+	background-color: #051E3E;
+	height: 100vh;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ #hi {
+	animation: pulse 5s;
+}
+
+@keyframes pulse {
+	0% {
+    opacity: 0;
+	}
+
+	100% {
+	opacity: 1;
+	}
+} 
+
+#hi:after {
+	content: "";
+	animation: spin 8s linear;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@keyframes spin {
+  0% { content:"Welcome To SolarSpot !"; }
+  100% { content:"Sunshine Deliver!"; }
+}
+/* welcome text animation end */
 
 /*** Button Start ***/
 .btn {
@@ -867,6 +923,7 @@
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   }
 }
+
 
 .contact .contact-img .contact-img-inner {
   position: relative;
