@@ -44,7 +44,8 @@
     animation-duration: 5s;
     /* animation-fill-mode: forwards; */
     /* animation-delay: 5000ms; */
-} */
+}
+ */
 
 /* #spin::after{
   content: "";
@@ -98,8 +99,8 @@
 }
 
 @keyframes spin {
-  0% { content:"Welcome To SolarSpot !"; }
-  100% { content:"Sunshine Deliver!"; }
+  0% { content:"Welcome To SolarSpot!"; }
+  100% { content:"Sunshine,Deliver!"; }
 }
 /* welcome text animation end */
 
