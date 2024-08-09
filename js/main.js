@@ -1,6 +1,8 @@
+
+
 (function ($) {
     "use strict";
-
+    
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -24,8 +26,8 @@
             $('.nav-bar').removeClass('sticky-top shadow-sm').css('top', '-100px');
         }
     });
-
-
+    
+    
     // Header carousel
     $(".header-carousel").owlCarousel({
         animateOut: 'fadeOut',
@@ -42,9 +44,9 @@
             '<i class="bi bi-arrow-left"></i>'
         ],
     });
-
-
-
+    
+    
+    
     // testimonial carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -77,29 +79,29 @@
             }
         }
     });
-
-
+    
+    
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 5,
         time: 2000
     });
-
-
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
+    
+    
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
     });
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-
-
+    
+    
     // Force Scroll to the Top of the Page on Page Reload
     if (history.scrollRestoration) {
         history.scrollRestoration = 'manual';
@@ -109,7 +111,17 @@
         }
     }
     
-
-
+    
+    
 })(jQuery);
+
+// gsap animation
+gsap.from(".header-carousel .anim-text h4",{
+    x:-500,
+    delay:1,
+    opacity:0,
+    ease:"elastic.out(1, 0.3)",
+    stagger:0.1,
+    duration:2,
+})
 
