@@ -115,7 +115,7 @@
     
 })(jQuery);
 
-// gsap animation
+// gsap welcome text animation start
 gsap.from(".header-carousel .anim-text h4",{
     x:-500,
     delay:1,
@@ -124,7 +124,10 @@ gsap.from(".header-carousel .anim-text h4",{
     stagger:0.1,
     duration:2,
 })
+// gsap welcome text animation end
 
+
+// gsap line animation start
 var path = "M 10 100 Q 500 100 1000 100";
 var finalPath = "M 10 100 Q 500 100 1000 100";
 
@@ -145,4 +148,22 @@ string.addEventListener("mouseleave", function (){
     ease: "elastic.out(1.3)",
   });
 })
+// gsap line animation end
 
+
+//gsap cursor animation start
+var body = document.querySelector("body")
+var cursor = document.querySelector(".cursor")
+
+
+body.addEventListener("mousemove", function(dets){
+    gsap.to(cursor,{
+        x: dets.clientX,
+        y: dets.clientY,
+        ease: "elastic",
+        duration: 1,
+       
+    })
+    
+})
+// cursor animation end

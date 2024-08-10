@@ -46,6 +46,16 @@ svg{
   }
 
 }
+
+.cursor{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  position: fixed;
+  border-radius: 50px;
+  mix-blend-mode: difference;
+  z-index: 999;
+}
 /* svg animation end */
 
 /* Welcom Text Animation start*/
