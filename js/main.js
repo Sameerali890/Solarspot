@@ -125,12 +125,12 @@ gsap.from(".header-carousel .anim-text h4",{
     duration:2,
 })
 
-var path = "M 10 100 Q 500 100 990 100";
-var finalPath = "M 10 100 Q 500 100 990 100";
+var path = "M 10 100 Q 500 100 1000 100";
+var finalPath = "M 10 100 Q 500 100 1000 100";
 
-var string = document.querySelector(".line");
+var string = document.querySelector("svg");
 string.addEventListener("mousemove", function (dets) {
-  path = `M 10 100 Q ${dets.x} ${dets.y} 990 100`;
+  path = `M 10 100 Q ${dets.x} ${dets.y} 1000 100`;
 
   gsap.to("svg path", {
     attr: { d: path },
