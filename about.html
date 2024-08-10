@@ -27,10 +27,30 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
          <!-- Template Stylesheet  -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">\
+
+        <style>
+            .cursor{
+          width: 50px;
+          height: 50px;
+          background-color: white;
+          position: fixed;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 10px;
+          font-weight: bold;
+          color: black;
+          mix-blend-mode: difference;
+          z-index: 999;
+        }
+        </style>
     </head>
 
     <body>
+        <div class="cursor"></div>
 
          <!-- Spinner Start  -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -697,10 +717,27 @@
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
 
          <!-- Template Javascript  -->
         <script src="js/main.js"></script>
+        <script>
+            var body = document.querySelector("body")
+            var cursor = document.querySelector(".cursor")
+            body.addEventListener("mousemove", function(dets){
+    cursor.innerHTML = "SolarSpot"
+    gsap.to(cursor,{
+        x: dets.clientX,
+        y: dets.clientY,
+        ease: "elastic",
+        duration: 1,
+       
+    })
+    
+})
+
+        </script>
     </body>
 
 </html>
