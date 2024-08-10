@@ -157,6 +157,7 @@ var cursor = document.querySelector(".cursor")
 
 
 body.addEventListener("mousemove", function(dets){
+    cursor.innerHTML = "SolarSpot"
     gsap.to(cursor,{
         x: dets.clientX,
         y: dets.clientY,
